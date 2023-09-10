@@ -1,9 +1,4 @@
-$(document).ready(function(){
-    $('.header_burger').click(function(event){
-        $('.header_burger, .header_li_main').toggleClass('active');
-        $("body").toggleClass('lock');
-    });
-});
+
 
 const burger = document.querySelector('.header_burger');
 const menu = document.querySelector('.header_li_main');
@@ -19,7 +14,7 @@ if (burger){
         menu.classList.toggle('active');
     });
 
-    menu.querySelectorAll('.menu__item').forEach(link => {
+    menu.querySelectorAll('.header_li_link').forEach(link => {
         link.addEventListener('click', function(e) {
             document.body.classList.remove('lock');
             menu.classList.remove('active');

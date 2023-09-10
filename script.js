@@ -1,15 +1,3 @@
-$(document).ready(function(){
-    $('.header_burger').click(function(event){
-        $('.header_burger, .header_li_main').toggleClass('active');
-        $("body").toggleClass('lock');
-    });
-});
-
-const burger = document.querySelector('.header_burger');
-const menu = document.querySelector('.header_li_main');
-const link = document.querySelector('.menu__item')
-
-
 if (burger){
     burger.addEventListener("click", function(e){
         document.body.classList.toggle('lock');

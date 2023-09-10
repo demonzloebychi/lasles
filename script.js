@@ -1,11 +1,6 @@
-
-
 const burger = document.querySelector('.header_burger');
 const menu = document.querySelector('.header_li_main');
 const link = document.querySelector('.header_li_link')
-
-
-
 
 if (burger){
     burger.addEventListener("click", function(e){
@@ -23,8 +18,6 @@ if (burger){
     })
     
 }
-
-
 
 const anchors = document.querySelectorAll("a[href*='#']")
 
